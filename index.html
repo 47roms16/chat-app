@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | [Chat App]</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="relative flex flex-col items-center justify-center">
+    <main>
+      <section
+        class="flex items-center gap-[7.8125rem] font-rubik max-md:flex-col max-md:gap-14 max-md:pb-20 max-md:pt-16 md:ml-28"
+      >
+        <div
+          class="mobile-design | max-w-[15.4375rem] rounded-[2rem] bg-white p-[.625rem]"
+        >
+          <div
+            class="app-header | relative rounded-bl-md rounded-br-md rounded-tl-3xl rounded-tr-3xl bg-gradient-to-r from-light-violet to-light-magenta"
+          >
+            <div
+              class="flex items-center justify-between px-4 pb-3 pt-[1.875rem]"
+            >
+              <div class="flex items-center gap-2">
+                <span class="text-xs text-white">❮</span>
+                <div class="mr-2 size-6 rounded-full border border-white">
+                  <img
+                    class="rounded-full"
+                    src="./images/avatar.jpg"
+                    alt="Profile photo"
+                  />
+                </div>
+                <div>
+                  <p class="text-xs text-white">Samuel Green</p>
+                  <p class="text-[.625rem] font-light text-pale-violet">
+                    Available to Walk
+                  </p>
+                </div>
+              </div>
+              <span class="text-white">⋮</span>
+            </div>
+          </div>
+          <div
+            class="flex w-[14.5rem] flex-col rounded-bl-3xl rounded-br-3xl bg-light-grayish-violet px-2 py-[.625rem]"
+          >
+            <div>
+              <p
+                class="animate-chat a | mb-2 max-w-32 rounded-bl-[4px] rounded-br-xl rounded-tl-xl rounded-tr-xl bg-light-purple p-2 text-[.5rem] text-moderate-violet"
+              >
+                That sounds great. I’d be happy with that.
+              </p>
+              <p
+                class="animate-chat b | max-w-32 rounded-bl-[4px] rounded-br-xl rounded-tl-xl rounded-tr-xl bg-light-purple p-2 text-[.5rem] text-moderate-violet"
+              >
+                Could you send over some pictures of your dog, please?
+              </p>
+            </div>
+            <div class="my-4 self-end">
+              <div class="mb-2 flex gap-2">
+                <img
+                  class="animate-img c | max-w-10 rounded-lg"
+                  src="./images/dog-image-1.jpg"
+                  alt=""
+                />
+                <img
+                  class="animate-img d | max-w-10 rounded-lg"
+                  src="./images/dog-image-2.jpg"
+                  alt=""
+                />
+                <img
+                  class="animate-img e | max-w-10 rounded-lg"
+                  src="./images/dog-image-3.jpg"
+                  alt=""
+                />
+              </div>
+              <p
+                class="animate-chat right f | mb-2 max-w-32 rounded-bl-xl rounded-br-[4px] rounded-tl-xl rounded-tr-xl bg-white p-2 text-[.5rem] text-dark-violet"
+              >
+                Here are a few pictures. She’s a happy girl!
+              </p>
+              <p
+                class="animate-chat right g | max-w-32 rounded-bl-xl rounded-br-[4px] rounded-tl-xl rounded-tr-xl bg-white p-2 text-[.5rem] text-dark-violet"
+              >
+                Can you make it?
+              </p>
+            </div>
+            <div>
+              <p
+                class="animate-chat h | max-w-32 rounded-bl-[4px] rounded-br-xl rounded-tl-xl rounded-tr-xl bg-light-purple p-2 text-[.5rem] text-moderate-violet"
+              >
+                She looks so happy! The time we discussed works. How long shall
+                I take her out for?
+              </p>
+              <div class="slide-left i | my-2 flex max-w-32 flex-col gap-2">
+                <div
+                  class="flex justify-between rounded-bl-[4px] rounded-br-xl rounded-tl-xl rounded-tr-xl bg-light-violet bg-gradient-to-r from-light-magenta py-2 pl-2 pr-[1.125rem]"
+                >
+                  <input type="radio" name="walk" id="30min" value="30min" />
+                  <label for="30min">30 minute walk </label
+                  ><span class="text-sm font-semibold text-white">$29</span>
+                </div>
+                <div
+                  class="flex justify-between rounded-bl-[4px] rounded-br-xl rounded-tl-xl rounded-tr-xl bg-light-violet bg-gradient-to-r from-light-magenta py-2 pl-2 pr-[1.125rem]"
+                >
+                  <input type="radio" name="walk" id="1hour" value="1hour" />
+                  <label for="1hour">1 hour walk </label
+                  ><span class="text-sm font-semibold text-white">$49</span>
+                </div>
+              </div>
+            </div>
+            <form class="relative mt-2">
+              <input
+                class="block w-full rounded-[100vw] px-4 py-3 text-[.575rem] placeholder:text-[.555rem] placeholder:text-grayish-blue"
+                type="text"
+                placeholder="Type a message…"
+              />
+              <button
+                class="absolute right-2 top-2 flex size-6 items-center justify-center rounded-full bg-very-dark-violet text-sm font-semibold text-white"
+              >
+                &gt;
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="slide-left | max-md:px-9 max-md:text-center">
+          <h1 class="mb-5 text-[2.5rem] font-medium text-very-dark-violet">
+            Simple booking
+          </h1>
+          <p class="max-w-[44ch] text-dark-grayish-violet">
+            Stay in touch with our dog walkers through the chat interface. This
+            makes it easy to discuss arrangements and make bookings. Once the
+            walk has been completed you can rate your walker and book again all
+            through the chat.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- <div class="attribution">
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+          Frontend Mentor
+        </a>
+      </p>
+      <p>Coded by <a href="#">Rommel San Jose</a></p>
+    </div> -->
+  </body>
+</html>
